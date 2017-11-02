@@ -1,0 +1,30 @@
+title: Fixhub
+subtitle: "基于 Laravel 5.5 开发的开源 Web 自动部署系统."
+description: "Fixhub 基于 Laravel 5.5 开发的开源 Web 自动部署系统."
+author: Fixhub
+language: zh-cn
+timezone: PRC
+
+url: http://fixhub.com
+root: /
+permalink: blog/:year/:month/:day/:title/
+archive_dir: blog
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+per_page: 0
+
+theme: fixhub
+deploy:
+  type: git
+  repo: git@github.com:fixhub/fixhub.github.io.git
+
+highlight:
+  enable: true
+  line_number: false
+
+# algolia:
+#   zh-cn:
+#     api_key: cdea7d4e47d84f6145b77e7f68689f35
+#     index_name: hexo_zh-cn
+
+github: fixhub/site
